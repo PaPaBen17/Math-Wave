@@ -1,0 +1,172 @@
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+  }
+  
+  .wrapper > * {
+    padding: 0;
+    margin: 0;
+    flex: 1 100%;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    background-image: url("gamemode-bg.jpg");
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+  }
+  
+  #mathwave {
+    margin-left: 10px;
+    margin-top: 2%;
+    color: yellow;
+  }
+  
+  nav {
+    display: flex;
+  }
+  
+  .header {
+    background: none;
+  }
+  
+  #logo{
+    margin-top: 20px;
+    margin-left: 150px;
+  }
+  #nav-links {
+    display: flex;
+    list-style: none;
+    margin-left: 600px;
+    margin-top: 2%;
+    gap: 50px;
+    color: yellow;
+    font-weight: 600;
+  }
+  
+  a{
+    text-decoration: none;
+    color: yellow;
+  }
+  
+  .footer {
+    position: absolute;
+    bottom: 0;
+    background: #14023e;
+    color: yellow;
+    width: 100%;
+  }
+  
+  .main {
+    background: white;
+    max-height: 743px;
+    height: 505px;
+    margin: 20px;
+    border-radius: 12px;
+  }
+  
+  #container {
+    padding: 5em 5em;
+    height: 280px;
+    margin: 30px;
+    background-color: wheat;
+    border-radius: 14px;
+  }
+  
+  #heading {
+    font-size: 1rem;
+    margin-top: -40px;
+  }
+  
+  #Disclaimer {
+    margin-top: -20px;
+  }
+  #question {
+  
+    font-size: 2.5em;
+  }
+  #question-container {
+    padding: 30px;
+    background: none;
+  }
+  #input-answer button, #input-answer input{
+    margin-top: 40px;
+  }
+  #input-answer input{
+    padding: 30px;
+    border: none;
+    width: 30%;
+    border-radius: 12px;
+  }
+  #input-answer button{
+    width: 30%;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.5em;
+  }
+  #input-answer button:hover{
+    background-color: #ff008a;
+    color: white;
+  }
+  #input-answer{
+    display: flex;
+    justify-content: space-evenly;
+  
+  }
+  #output{
+    margin-top: 20px;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    margin-right: 80px;
+    gap: 50px;
+  }
+  .aside1 {
+    background: pink;
+    height: 505px;
+    margin: 20px 0 20px 0;
+    border-radius: 0 12px 12px 0;
+  }
+  .aside1 p {
+    font-size: 2.5em;
+    text-align: left;
+    margin: 15px;
+  }
+  .aside2 p {
+    font-size: 2.5em;
+    text-align: right;
+    margin: 15px;
+  }
+  .aside2 {
+    background: pink;
+    height: 505px;
+    margin: 20px 0 20px 0;
+    border-radius: 12px 0 0 12px;
+  }
+  
+  @media all and (min-width: 800px) {
+    .main {
+      flex: 3;
+    }
+    .aside1 {
+      order: 1;
+    }
+    .aside2 {
+      order: 2;
+    }
+    .main {
+      order: 2;
+    }
+    .footer {
+      order: 4;
+    }
+  }
+  
+  @media all and (min-width: 600px) {
+    .aside {
+      flex: 1;
+    }
+  }
+  
