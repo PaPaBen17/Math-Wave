@@ -201,6 +201,65 @@
       order: 4;
     }
   }
+
+
+/* Small laptops */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main {
+      flex: 3;
+    }
+    .aside1 {
+      order: 1;
+    }
+    .aside2 {
+      order: 2;
+    }
+    .main {
+      order: 2;
+    }
+    .footer {
+      order: 4;
+    }
+}
+
+/* Medium laptops */
+@media (min-width: 1025px) and (max-width: 1366px) {
+  .main {
+      flex: 3;
+    }
+    .aside1 {
+      order: 1;
+    }
+    .aside2 {
+      order: 2;
+    }
+    .main {
+      order: 2;
+    }
+    .footer {
+      order: 4;
+    }
+}
+
+/* Large laptops */
+@media (min-width: 1367px) {
+  .main {
+      flex: 3;
+    }
+    .aside1 {
+      order: 1;
+    }
+    .aside2 {
+      order: 2;
+    }
+    .main {
+      order: 2;
+    }
+    .footer {
+      order: 4;
+    }
+}
+
   
   @media all and (min-width: 600px) {
     .aside {
