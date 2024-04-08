@@ -241,7 +241,8 @@
       flex: 1;
     }
   }
-  @media screen and (max-width: 360px) and (max-height: 740px) {
+
+@media screen and (max-width: 360px) and (max-height: 740px) {
     .wrapper {
       display: flex;
       flex-flow: row wrap;
@@ -420,11 +421,7 @@
       
     }
     .footer {
-      position: absolute;
-      bottom: 0;
-      background: #14023e;
-      color: yellow;
-      width: 100%;
+      display: none;
     }
     
     .main {
@@ -449,3 +446,4 @@
       display: none;
     }
   }
+ 
