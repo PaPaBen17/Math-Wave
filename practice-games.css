@@ -201,28 +201,14 @@
       order: 4;
     }
   }
+  
+  @media all and (min-width: 600px) {
+    .aside {
+      flex: 1;
+    }
+  }
 
-
-/* Small laptops */
-@media (min-width: 768px) and (max-width: 1024px) {
-  .main {
-      flex: 3;
-    }
-    .aside1 {
-      order: 1;
-    }
-    .aside2 {
-      order: 2;
-    }
-    .main {
-      order: 2;
-    }
-    .footer {
-      order: 4;
-    }
-}
-
-@media screen and (max-width: 500px) and (max-height: 740px) {
+  @media screen and (max-width: 360px) and (max-height: 740px) {
     body {
       margin: 0;
       background-image: url("gamemode-bg.jpg");
@@ -334,6 +320,7 @@
       cursor: pointer;
       color: white;
   }
+   
     .footer {
       display: none;
     }
@@ -364,4 +351,3 @@
       display: none;
     }
   }
-
