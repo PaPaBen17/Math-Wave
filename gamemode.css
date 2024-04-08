@@ -257,4 +257,138 @@
       flex: 1;
     }
   }
-  
+  @media screen and (max-width: 360px) and (max-height: 740px) {
+    body {
+      margin: 0;
+      background-image: url("phonebg.jpg");
+      background-size: cover;
+      font-family: "Poppins", sans-serif;
+    }
+    .overlay {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+      z-index: 9999;
+    }
+    
+    .popup {
+      background-color: #fff;
+      padding: 25px;
+      width: 200px;
+      border-radius: 5px;
+      text-align: center;
+    }
+    
+    p .note{
+      display: flex;
+      justify-content: center;
+      color: red;
+      margin-top: 20px;
+      margin-bottom: -15px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: pink;
+      color: black;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    button:hover {
+      background-color: hotpink;
+    }
+    #mathwave {
+      display: block;
+      margin-top: 20px;
+    }
+    #logo{
+     display: none;
+    }
+    nav{
+      display: grid;
+    }
+    #nav-links {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin-left: -45px;
+      margin-top: 10px;
+      gap: 20px;
+      color: yellow;
+      font-weight: 600;
+      font-size: 12px;
+    }
+    
+    a{
+      text-decoration: none;
+      color: yellow;
+    }
+    .grid-container {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: auto;
+      margin-top: 10px;
+      gap: 20px;
+    }
+    
+    .grid-items {
+      width: 230px;
+      height: 230px;
+      background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.1) 0%,
+        rgba(255, 255, 255, 0.1) 100%
+      );
+      border: 1px solid rgba(255, 255, 255, 1);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 16px;
+    }
+    #title{
+        margin: 20px 20px -20px 20px;
+        font-size: 30px;
+        color: white;
+    }
+    .description{
+        height: 200px;
+        margin: 15px 20px 0 20px;
+        color: white;
+    }
+    
+    .description p{
+        font-size: 15px;
+    }
+    
+    #play-btn{
+        display: flex;
+        justify-content: center;
+        margin-top: -100px;
+    }
+    
+    #play-btn button{
+        padding: 20px;
+        width: 200px;
+        border: none;
+        border-radius: 16px;
+        font-size: 1rem;
+        background-color: #FFB6C1;
+        color: #ff008a;
+    }
+    
+    #play-btn button:hover{
+        background-color: #ff008a;
+        color: white;
+    }
+    .footer {
+      display: none;
+    }
+    
+}
+
