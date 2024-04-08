@@ -225,12 +225,11 @@
       flex: 1;
     }
   }
-  @media screen and (max-width: 360px) and (max-height: 740px) {
+ @media screen and (max-width: 360px) and (max-height: 740px) {
   body {
     margin: 0;
     background-image: url("gamemode-bg.jpg");
     font-family: "Poppins", sans-serif;
-    height: 100vh;
   }
 
   nav {
@@ -273,18 +272,21 @@
     max-height: 743px;
     height: 505px;
     border-radius: 12px;
+    width: 200px;
   }
 
   #container {
-    display: block;
-    width: 100px;
+    display: flex;
+    padding: 65px;
+    margin: 20px;
     background-color: wheat;
     border-radius: 14px;
+    height: 335px;
   }
 
   #heading {
     display: flex;
-    font-size: 1rem;
+    font-size: 5rem;
     margin-top: -70px;
   }
 
@@ -311,7 +313,7 @@
     border-radius: 12px;
   }
   #input-answer button {
-    width: 100%;
+    width:200px;
     border: none;
     border-radius: 12px;
     padding: 10px;
@@ -322,10 +324,10 @@
     color: white;
   }
   #input-answer {
-    margin-left: -65px;
     display: flex;
-    gap: 10px;
+    justify-content: space-evenly;
   }
+
   #output {
     margin-top: 10px;
     font-size: 15px;
@@ -333,7 +335,7 @@
     margin-left: 50px;
     gap: 10px;
   }
-  #timer {
+  #timer, #score{
     display: flex;
     width: 200px;
   }
@@ -404,7 +406,7 @@
   #heading {
     display: flex;
     font-size: 1rem;
-    margin-top: -70px;
+    margin-top: -30px;
   }
 
   #Disclaimer {
@@ -412,7 +414,7 @@
   }
   #question {
     display: flex;
-    font-size: 25px;
+    font-size: 40px;
     width: 100px;
   }
   #question-container {
@@ -423,14 +425,15 @@
   #input-answer button,
   #input-answer input {
     margin-top: 10px;
+    margin-left: 20px;
   }
   #input-answer input {
-    width: 100px;
+    width: 180px;
     border: none;
     border-radius: 12px;
   }
   #input-answer button {
-    width: 100%;
+    width: 240px;
     border: none;
     border-radius: 12px;
     padding: 10px;
@@ -442,20 +445,22 @@
   }
   #input-answer {
     margin-left: -65px;
-    display: flex;
+    display: grid;
     gap: 10px;
   }
   #output {
     margin-top: 10px;
     font-size: 15px;
     display: grid;
-    margin-left: 50px;
+    justify-content: center;
+    margin-left: 95px;
     gap: 10px;
   }
-  #timer {
+  #timer, #score {
     display: flex;
     width: 200px;
   }
+
   .aside1 {
     display: none;
   }
