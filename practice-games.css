@@ -222,50 +222,6 @@
     }
 }
 
-/* Medium laptops */
-@media (min-width: 1025px) and (max-width: 1366px) {
-  .main {
-      flex: 3;
-    }
-    .aside1 {
-      order: 1;
-    }
-    .aside2 {
-      order: 2;
-    }
-    .main {
-      order: 2;
-    }
-    .footer {
-      order: 4;
-    }
-}
-
-/* Large laptops */
-@media (min-width: 1367px) {
-  .main {
-      flex: 3;
-    }
-    .aside1 {
-      order: 1;
-    }
-    .aside2 {
-      order: 2;
-    }
-    .main {
-      order: 2;
-    }
-    .footer {
-      order: 4;
-    }
-}
-
-  
-  @media all and (min-width: 600px) {
-    .aside {
-      flex: 1;
-    }
-  }
 @media screen and (max-width: 360px) and (max-height: 740px) {
     body {
       margin: 0;
@@ -378,17 +334,8 @@
       cursor: pointer;
       color: white;
   }
-  
-
-  
-    
     .footer {
-      position: absolute;
-      bottom: 0;
-      background: #14023e;
-    
-      width: 100%;
-      color: yellow;
+      display: none;
     }
     
     .main {
@@ -417,4 +364,4 @@
       display: none;
     }
   }
-  
+
