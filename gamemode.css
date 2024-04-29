@@ -10,11 +10,22 @@
   }
   
   body {
-    margin: 0;
-    background-image: url("gamemode-bg.jpg");
-    background-size: cover;
-    font-family: "Poppins", sans-serif;
-  }
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden; /* Ensure video covers entire body */
+}
+video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  filter: brightness(0.7);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: -1; /* Ensure video is behind other content */
+}
   
   #mathwave {
     margin-left: 10px;
