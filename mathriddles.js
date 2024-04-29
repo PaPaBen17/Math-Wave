@@ -154,19 +154,24 @@ submitBtn.addEventListener('click', () => {
         } else {
             clearInterval(timerInterval); // Stop the timer interval
             totalTime = new Date() - startTime; // Calculate total time taken
-            const totalScore = score + "/" + (quizData.length * 10); // Calculate total score
+            const totalScore = `${score}/${quizData.length * 10}`; // Calculate total score
             // Display final score, total time, and total score
             quiz.innerHTML = `
                 <div id="result-quiz">
-                <h2>You answered ${score}/${quizData.length * 10} questions correctly</h2>
-                <h2 style="display: inline-block; margin-right: 20px;">Total Time Taken: ${formatTime(totalTime)}</h2>
-                <h2 style="display: inline-block;">Total Score: ${totalScore}</h2>
-                <iframe src="https://giphy.com/embed/TdfyKrN7HGTIY" width="280" height="175" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/happy-spongebob-squarepants-patrick-TdfyKrN7HGTIY">via GIPHY</a></p>
-                <button onclick="location.reload()" style="margin-top: 10px;">Reload</button></div>
+                    <h2>You answered ${score}/${quizData.length * 10} questions correctly</h2>
+                    <h2 style="display: inline-block; margin-right: 20px;">Total Time Taken: ${formatTime(totalTime)}</h2>
+                    <h2 style="display: inline-block;">Total Score: ${totalScore}</h2>
+                    <iframe src="https://giphy.com/embed/TdfyKrN7HGTIY" width="280" height="175" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                    <p><a href="https://giphy.com/gifs/happy-spongebob-squarepants-patrick-TdfyKrN7HGTIY">via GIPHY</a></p>
+                    <button onclick="location.reload()" style="margin-top: 10px;">Reload</button>
+                </div>
             `;
         }
         // Update the score display after each answer submission
         scoreDisplay.textContent = `Score: ${score}`;
+    } else {
+        // Handle case where user submits without selecting an answer
+        alert("Please select an answer before submitting.");
     }
 });
 
