@@ -159,11 +159,11 @@ function startGame() {
 submitBtn.addEventListener("click", () => {
     const answer = getSelected();
     if (answer) {
-        if (answer === quizData[currentQuiz].correct) {
-            score += 10;
-        }
-        currentQuiz++;
         if (currentQuiz < quizData.length) {
+            if (answer === quizData[currentQuiz].correct) {
+                score += 10;
+            }
+            currentQuiz++;
             loadQuiz();
         } else {
             clearInterval(timerInterval);
@@ -171,19 +171,23 @@ submitBtn.addEventListener("click", () => {
             const totalScore = score + "/" + quizData.length * 10;
             quiz.innerHTML = `
                 <div id="result-quiz">
-                <h2>You answered ${score}/${quizData.length * 10
-                } questions correctly</h2>
-                <div style="display: flex; justify-content: space-evenly; align-items: center;">
-                <h2>Total Time Taken: ${formatTime(totalTime)}</h2>
-                <h2>Total Score: ${totalScore}</h2>
+                    <h2>You answered ${score}/${quizData.length * 10} questions correctly</h2>
+                    <div style="display: flex; justify-content: space-evenly; align-items: center;">
+                        <h2>Total Time Taken: ${formatTime(totalTime)}</h2>
+                        <h2>Total Score: ${totalScore}</h2>
+                    </div>
+                    <iframe src="https://giphy.com/embed/3o7abKhOpu0NwenH3O" width="380" height="170" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/spongebob-cartoon-nickelodeon-thumbs-3o7abKhOpu0NwenH3O">via GIPHY</a></p>
+                    <button onclick="location.reload()">Reload</button>
                 </div>
-                <iframe src="https://giphy.com/embed/3o7abKhOpu0NwenH3O" width="380" height="170" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/spongebob-cartoon-nickelodeon-thumbs-3o7abKhOpu0NwenH3O">via GIPHY</a></p>
-                <button onclick="location.reload()">Reload</button></div>
             `;
+            scoreDisplay.textContent = `Score: ${score}`;
         }
-        scoreDisplay.textContent = `Score: ${score}`;
+    } else {
+        // Display a message or handle the case where no answer is selected
+        alert("Please select an answer before submitting.");
     }
 });
+
 
 // Function to update timer display
 function updateTimerDisplay() {
