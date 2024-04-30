@@ -39,7 +39,7 @@
     display: flex;
     list-style: none;
     margin-left: 700px;
-  
+    margin-top: 15px;
     gap: 50px;
     color: yellow;
     font-weight: 600;
