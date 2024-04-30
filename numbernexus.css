@@ -62,14 +62,14 @@ nav {
 }
 
 #img {
-  width: 600px;
+  width: 400px;
   height: 240px;
   margin: 0 auto;
   margin-bottom: -120px;
 
 }
 .question-image {
-  width: 600px; /* Adjust the width as needed */
+  width: 400px; /* Adjust the width as needed */
   height: auto; /* Maintain aspect ratio */
   border-radius: 12px;
   background-image: url("math-sequence-tutorial.png");
